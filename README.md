@@ -1,7 +1,7 @@
 # content_aware_seam_carving
 # Vertical Seam removal
 Original image
-![](Images/castle.jpg)
+![](Images/Castle.jpg)
 Process in action
 ![](Code/output/Reduction/Output_ver_castle.gif)
 Final image
