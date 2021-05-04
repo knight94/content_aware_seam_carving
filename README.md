@@ -17,7 +17,7 @@ Final image
 
 # Seam insertion
 Original image
-![](Images/Dolphin.png)
+![](Images/Dolpin.png)
 - Energy function 1 (absolute sum of gradient in x and y)
 Seam to be inserted
 ![](Code/output/insert/Dolphin_seams.svg)
@@ -34,7 +34,7 @@ Final image
 
 # Object removal
 Original image
-![](Images/balloo.png)
+![](Images/balloon.png)
 Using vertical seams
 ![](Code/output/object_remove/object_remove_balloon_ver.gif)
 Using horizontal seams
@@ -50,7 +50,7 @@ Prevent one object from distortion while removing other nearby object
 
 # Comparing optimal seam removal with sub-optimal methods
 Original image
-![](Images/butterfly_1.png)
+![](Images/butterfly_1.jpg)
 -Vertical seam then horizontal
 ![](Code/output/Opt_sub/butterfly_1_sub_optimal_ver_hor.svg)
 -Horizontal seam then vertical
