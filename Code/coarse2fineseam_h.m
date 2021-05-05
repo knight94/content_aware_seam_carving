@@ -24,6 +24,9 @@ tic
        else
           seams_data = RunHoriSeamCarve(img_data{j},nj); %Ij
        end
-    end 
+    end
+figure
+imshow(img_data{j});
+imwrite(img_data{j},'../Images/hor_remove.jpg'); 
 toc
 end

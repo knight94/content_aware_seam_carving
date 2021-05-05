@@ -25,7 +25,7 @@ end
 [tempI] = HoriNewImage(tempI,new_seam{i});
 [tempI] = HoriNewImage(tempI,new_seam{length(seam_Ip)+ i});
 end
-figure
-imshow(tempI);
-disp(size(tempI));
+% figure
+% imshow(tempI);
+% disp(size(tempI));
 end 

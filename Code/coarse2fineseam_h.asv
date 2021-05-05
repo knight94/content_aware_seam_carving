@@ -1,4 +1,4 @@
-function coarse2fineseam(N,L,impath)
+function coarse2fineseam_h(N,L,impath)
 tic
     img_data = cell(1,L);
     for i=1:L
@@ -16,17 +16,16 @@ tic
 %        disp(nj);
 %        disp('$$$$');
        if j<L 
-          [img_data{j}, new_seam] = mapping(seams_data, img_data{j});% map from Ip to Ij
-          seams_data = RunVertSeamCarve(img_data{j},nj); 
+          [img_data{j}, new_seam] = mapping_h(seams_data, img_data{j});% map from Ip to Ij
+          seams_data = RunHoriSeamCarve(img_data{j},nj); 
           seams_data = [seams_data , new_seam];
 %           disp(size(img_data{j}));
 %           disp('****'); 
        else
-          seams_data = RunVertSeamCarve(img_data{j},nj); %Ij
+          seams_data = RunHoriSeamCarve(img_data{j},nj); %Ij
        end
     end
-figure
 imshow(img_data{j});
-imwrite(img_data{j},'../Images/ver_remove.jpg'); 
+imwrite(img_data{j},'../Images/img_ver_remove.jpg')
 toc
 end

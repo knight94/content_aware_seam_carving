@@ -25,7 +25,7 @@ end
 [tempI] = VerNewImage(tempI,new_seam{i});
 [tempI] = VerNewImage(tempI,new_seam{length(seam_Ip)+ i});
 end
-figure
-imshow(tempI);
+% figure
+% imshow(tempI);
 % disp(size(tempI));
 end 
