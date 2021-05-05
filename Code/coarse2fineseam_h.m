@@ -5,7 +5,8 @@ tic
         if i==1
             img_data{i} = imread(impath);
         else 
-            img_data{i} = impyramid(img_data{i-1},'reduce');
+%             img_data{i} = impyramid(img_data{i-1},'reduce');
+            img_data{i} = guass_pyr_reduce(img_data{i-1});
         end 
     end     
     nj_arr = zeros(1,L);
