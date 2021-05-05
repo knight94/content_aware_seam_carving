@@ -1,4 +1,5 @@
 % clear all; clc;
+tic
 I = imread('../Images/butterfly_1.jpg');
 if (size(I,1) > 700)
     I = imresize(I, [700 NaN]);
@@ -42,5 +43,5 @@ end
 
 figure;
 imshow(I);
-
+toc
 
